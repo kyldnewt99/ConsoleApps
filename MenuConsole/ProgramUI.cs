@@ -83,10 +83,13 @@ namespace MenuConsole
             Console.WriteLine($"Enter the meal number for {item.MealName}: ");
             item.MealNumber = Console.ReadLine();
             //meal price
-            //Console.WriteLine($"Enter the price for {item.MealName}: ");
-            //NEED TO CONVERT DOUBLE TO STRING (?????)
-           
-            //item.Price = Console.WriteLine();
+            Console.WriteLine($"Enter the price for {item.MealName}: ");
+            
+            string itemPrice = Console.ReadLine();
+            //convert user input into a double
+            double priceID = double.Parse(itemPrice);
+            item.Price = priceID;
+            _menuRepository.AddMenuItemToDirectory(item);
         }
         private void ShowAllItems()
         {
