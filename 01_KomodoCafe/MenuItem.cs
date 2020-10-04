@@ -8,25 +8,26 @@ namespace _01_KomodoCafe
 {
     public class MenuItem
     {
-        public int MealNumber { get; set; }
+        public string MealNumber { get; set; }
         public string MealName { get; set; }
         public string Description { get; set; }
         public string Ingredients { get; set; }
         public double Price { get; set; }
 
-        public string mealName
+        /*public string MealName
         {
             get 
             {
-               string MealName = ($"{mealName}");
-                return (!string.IsNullOrEmpty(MealName)) ? MealName : "Unnamed";
+               string mealName = ($"{MealName}");
+                return (!string.IsNullOrWhiteSpace(mealName)) ? mealName : "Unnamed";
             }
-        }
+            set { }
+        }*/
         public MenuItem()
         {
 
         }
-        public MenuItem(string mealName, int mealNumber, string description, double price, string ingredients)
+        public MenuItem(string mealName, string mealNumber, string description, double price, string ingredients)
         {
             MealNumber = mealNumber;
             MealName = mealName;
