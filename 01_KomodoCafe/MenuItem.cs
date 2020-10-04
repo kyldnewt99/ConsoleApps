@@ -14,15 +14,7 @@ namespace _01_KomodoCafe
         public string Ingredients { get; set; }
         public double Price { get; set; }
 
-        /*public string MealName
-        {
-            get 
-            {
-               string mealName = ($"{MealName}");
-                return (!string.IsNullOrWhiteSpace(mealName)) ? mealName : "Unnamed";
-            }
-            set { }
-        }*/
+      
         public MenuItem()
         {
 
@@ -35,7 +27,7 @@ namespace _01_KomodoCafe
             Price = price;
             Ingredients = ingredients;
         }
-        public void SetMealName(string mealName)
+       /* public void SetMealName(string mealName)
         {
             MealName = mealName;
         }
@@ -54,6 +46,6 @@ namespace _01_KomodoCafe
         public void SetIngredients(string ingredients)
         {
             Ingredients = ingredients;
-        }
+        }*/
     }
 }
