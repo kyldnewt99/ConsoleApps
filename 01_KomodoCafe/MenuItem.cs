@@ -27,25 +27,6 @@ namespace _01_KomodoCafe
             Price = price;
             Ingredients = ingredients;
         }
-       /* public void SetMealName(string mealName)
-        {
-            MealName = mealName;
-        }
-        public void SetMealNumber(int mealNumber)
-        {
-            Price = Price;
-        }
-        public void SetMealDescription(string description)
-        {
-            Description = description;
-        }
-       public void SetMealPrice(double price)
-        {
-            Price = price;
-        }
-        public void SetIngredients(string ingredients)
-        {
-            Ingredients = ingredients;
-        }*/
+       
     }
 }
